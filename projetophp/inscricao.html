@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        width: 120px;
+        border-radius: 10px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://cdn.folhape.com.br/upload/dn_arquivo/2017/01/campus-party-1-1159274338jpg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div{
+        background-color: #1d1d1d;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 40px 60px;
+        border-radius: 15px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #Login{
+        left: 35%;
+    }
+    #Cadastro{
+        left:65%;
+    }
+    input{
+        padding: 5px; 
+        outline: none;
+        font-size: 15px;
+        background-color: transparent;
+        border: none;
+        border-bottom: solid 1px rgb(0, 153, 255);
+    }
+    input::placeholder{
+        color: #fff;
+    }
+    button{
+
+        background-color: rgb(0, 153, 255);
+        border: none;
+        padding: 15px;
+        width: 100%;
+        border-radius: 10px;
+        font-size: 15px;
+        color: white;
+        transition: 0.3s ease-in-out all;
+    }
+    button:hover{
+        background-color: rgb(0, 60, 255);
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div id="Cadastro">
+    <img class="logof" src="./assets/logo.png"
+    <h1>Faça Seu Cadastro</h1>
+    <form action="registro.index.html" method="POST">
+        <input type="text" name="nome" placeholder="Seu Nome" required><br>
+        <input type="email" name="email" placeholder="Seu E-mail" required><br>
+        <input type="text" name="cep" placeholder="Seu CEP"required><br>
+        <input type="tel" name="telefone"placeholder="Seu Telefone"required><br>
+        <input type="text" name="cpf" placeholder="Seu CPF"required><br>
+        <input type="password" name="senha"placeholder="Sua Senha"required><br>
+        <button type="submit" name="submit">cadastrar</button>
+    </form>
+
+    </div>
+    <div id="Login"> 
+        <h1>Faça Seu Login</h1>
+        <form action="registro.index.html" method="POST">
+            <input type="email" name="email" placeholder="Seu E-mail" required><br>
+            <input type="password" name="senha"placeholder="Sua Senha"required><br>
+            <button type="submit" name="submit">Entrar</button>
+        </form>
+    </div>
+
+</body>
+</html>

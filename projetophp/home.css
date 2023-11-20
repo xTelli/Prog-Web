@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #1d1d1d;
+    color: #fff;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("fundo.jpg");
+    background-color: rgb(0, 153, 255);
+    background-position: center;
+    background-size: cover;
+}   
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+}
+
+nav img {
+    width: 60px;
+    border-radius: 13px;
+}
+
+.opnav {
+    flex: 1;
+    text-align: right;
+}
+
+.foto {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.opnav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.opnav ul li {
+    display: inline-block;
+    padding: 8px 17px;
+    position: relative;
+}
+
+.opnav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 0;
+}
+
+.opnav ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: rgb(0, 153, 255);
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+}
+
+.opnav ul li:hover::after {
+    width: 100%;
+}
+
+.textocentral{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 45px;
+}
+.textocentral p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+}
+.textoobjetivo{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.textoobjetivo h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.textoobjetivo p{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.franquias{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.franquia li{
+    list-style: none;
+    font-size: 14px;
+}
+.franquias p{
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+.franquia{
+    flex-basis: 31%;
+    background: rgb(0, 153, 255);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.carros{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.carros h1{
+    font-size: 36px;
+    font-weight: 600;
+    padding-bottom: 85px;
+}
+.cardcarros{
+    flex-basis: 32%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.cardcarros img{
+    width: 100%;
+    border-radius: 20px;
+}
+.nomeop{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: black;
+}
+.botao{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 12px 34px;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 7px;
+
+}
+.botao:hover{
+    background: #fff;
+    color: rgb(0, 153, 255);
+}
+footer{
+    padding: 50px 40px 40px 75px;
+    background-color: #4d4d4d;
+    border-radius: 23px;
+    margin-top: 90px;
+    font-size: 14px;
+    box-shadow: 0px 0px 15px 13px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+.logof{
+    width: 90px;
+    border-radius: 13px;
+    margin-bottom: -35px;
+}
+.opfoot{
+    text-align: right;
+    position: relative;
+    margin-top: -50px;
+    
+}
+.opfoot ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.opfoot ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.opfoot ul li a:hover{
+    color:rgb(0, 153, 255);
+}
+footer p{
+    margin-bottom: 5px;
+}
+footer h3{
+    text-align: right;
+    position: relative;
+    margin-bottom: 15px;
+    margin-right: 105px;
+}
+.infos{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 70px;
+    position: relative;
+}
+.redes{
+    text-align: right;
+}
+.icones {
+    font-size: 13px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.youtube, .instagram, .twitter {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.palestrantes-icons {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.palestrante {
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+    text-align: left;
+    max-width: 300px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.palestrante h3, .palestrante h4 {
+    color: #fff;
+}
+
+.palestrante a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.palestrante a:hover {
+    text-decoration: underline;
+}
+.sobrenos {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+}
+
+.sobrenos h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.sobrenos p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 0 20px;
+}
+
