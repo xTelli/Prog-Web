@@ -3,7 +3,7 @@
 $nomeServidor = "localhost";
 $username = "root";
 $password = "";
-$nomeBD = "phpmyadmin";
+$nomeBD = "techfest";
 
 $conn = new mysqli($nomeServidor, $username, $password, $nomeBD);
 
