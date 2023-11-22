@@ -26,7 +26,7 @@
                 $servername = "localhost";
                 $username = "root";
                 $password = "";
-                $dbname = "phpmyadmin";
+                $dbname = "techfest";
 
                 $conn = new mysqli($servername, $username, $password, $dbname);
 
